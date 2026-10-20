@@ -11,10 +11,10 @@ Across the Code-Blue projects the same manual chores repeat: hash evidence, skim
 ## The toolkit at a glance
 | Tool | One-liner | Used at this stage | Feeds project |
 |---|---|---|---|
-| [`hashit.py`](scripts/hashit.py) | hash & verify (MD5+SHA-256) with a manifest | **Acquisition** + before/after analysis | [P01](../project-01-evidence-acquisition-integrity/) |
-| [`logparser.py`](scripts/logparser.py) | triage auth / web logs → who failed, who got in, what's odd | **Detection & triage** | [P13](../project-13-event-log-investigation/), [P14](../project-14-linux-intrusion/), [P15](../project-15-network-forensics/) |
-| [`iocextract.py`](scripts/iocextract.py) | pull + de-fang + (optionally) enrich IOCs from any text | **Analysis / intel** | [P18](../project-18-malware-triage/), [P19](../project-19-email-phishing-forensics/), [P20](../project-20-business-email-compromise/) |
-| [`evtx2csv.py`](scripts/evtx2csv.py) | summarize EVTX Event-ID counts + export CSV | **Windows investigation** | [P13](../project-13-event-log-investigation/), [P17](../project-17-velociraptor-live-response/) |
+| [`hashit.py`](scripts/hashit.py) | hash & verify (MD5+SHA-256) with a manifest | **Acquisition** + before/after analysis | [P01](../../00-lab-foundation/project-01-evidence-acquisition-integrity/) |
+| [`logparser.py`](scripts/logparser.py) | triage auth / web logs → who failed, who got in, what's odd | **Detection & triage** | [P13](../../B-dfir/project-13-event-log-investigation/), [P14](../../B-dfir/project-14-linux-intrusion/), [P15](../../B-dfir/project-15-network-forensics/) |
+| [`iocextract.py`](scripts/iocextract.py) | pull + de-fang + (optionally) enrich IOCs from any text | **Analysis / intel** | [P18](../../B-dfir/project-18-malware-triage/), [P19](../../C-cybercrime/project-19-email-phishing-forensics/), [P20](../../C-cybercrime/project-20-business-email-compromise/) |
+| [`evtx2csv.py`](scripts/evtx2csv.py) | summarize EVTX Event-ID counts + export CSV | **Windows investigation** | [P13](../../B-dfir/project-13-event-log-investigation/), [P17](../../B-dfir/project-17-velociraptor-live-response/) |
 
 ---
 
@@ -54,7 +54,7 @@ Get a fast Event-ID census (the security-relevant IDs are flagged) then export t
 python3 scripts/evtx2csv.py Security.evtx --summary
 python3 scripts/evtx2csv.py Security.evtx --only 4624,4625,4720,4732,7045 --csv security.csv
 ```
-Requires `python-evtx` (`pip install python-evtx`); if it's missing the tool says so instead of crashing. The flagged IDs are exactly the ones the [Event Log project](../project-13-event-log-investigation/) hunts (4625→4624→4720/4732→7045/4648).
+Requires `python-evtx` (`pip install python-evtx`); if it's missing the tool says so instead of crashing. The flagged IDs are exactly the ones the [Event Log project](../../B-dfir/project-13-event-log-investigation/) hunts (4625→4624→4720/4732→7045/4648).
 
 ---
 

@@ -35,7 +35,7 @@ Internet Explorer / Edge store history, cookies and cached pages in **`WebCacheV
 
 **Findings (Case A)**
 1. A domain controller should never browse to a raw external IP. `194.61.24.102` is the strongest lead in the case and is the IOC to block.
-2. The `file:///` entries prove the sensitive files in `C:\FileShare\Secret` were not only copied (shown by LNK/ShellBags in [Project 11](../project-11-windows-disk-forensics/)) but also **viewed in the browser**.
+2. The `file:///` entries prove the sensitive files in `C:\FileShare\Secret` were not only copied (shown by LNK/ShellBags in [Project 11](../../B-dfir/project-11-windows-disk-forensics/)) but also **viewed in the browser**.
 3. Default bookmark and cookie are noise; separating them from real activity is part of the analysis.
 
 ---
@@ -79,7 +79,7 @@ Each saved image carries a `Zone.Identifier` alternate data stream recording whe
 **Findings (Case B)**
 1. A concentrated burst of weapon-acquisition searches at ~00:30 local, then local gun-store searches the same afternoon.
 2. `Zone.Identifier` proves the ideological images were **downloaded from the internet by this user**, and names the sites.
-3. Box cookies corroborate the cloud-upload activity found on disk ([Project 16](../project-16-super-timeline/)).
+3. Box cookies corroborate the cloud-upload activity found on disk ([Project 16](../../B-dfir/project-16-super-timeline/)).
 
 ---
 

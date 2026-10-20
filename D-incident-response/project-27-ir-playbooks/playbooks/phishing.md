@@ -21,4 +21,4 @@
 6. **Recover & close** — confirm removal, document IOCs, add a detection rule, user-awareness note.
 
 ## Runs for real in
-[Project 19 — Email Phishing Forensics](../../project-19-email-phishing-forensics/)
+[Project 19 — Email Phishing Forensics](../../../C-cybercrime/project-19-email-phishing-forensics/)

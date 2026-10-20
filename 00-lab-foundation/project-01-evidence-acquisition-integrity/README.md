@@ -178,7 +178,7 @@ The image `Operation Redbridge 2024 AXA-3.E01` was opened in **FTK Imager** and 
 **Discrepancy found:** the E01 header records acquisition on **15 Feb 2024**, but the case notes say the drive was seized on **16 Feb 2024**. One of the dates is wrong (workstation clock or recording error) and must be explained in the chain of custody.
 
 ## Chain of custody — AXA/3 (example)
-Template: [`../../templates/chain-of-custody.md`](../../templates/chain-of-custody.md)
+Template: `../../templates/chain-of-custody.md`
 
 | # | Date / time | Released by | Received by | Action | Hash verified |
 |---|---|---|---|---|---|

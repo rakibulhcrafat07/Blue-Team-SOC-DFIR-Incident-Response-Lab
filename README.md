@@ -5,7 +5,7 @@ A project-based blue team portfolio covering the full defender lifecycle: **buil
 
 Every project is a self-contained investigation or build with its own scenario, evidence, findings, troubleshooting log and report. No copied commands, no empty templates: a project is marked complete only when it contains real screenshots, hashes, queries and findings produced in this lab.
 
-**Progress:** 28 of 37 projects complete. Track A (SOC & SIEM) is in progress; all other tracks are done.
+**Progress:** 29 of 38 projects complete. Track 0 and Tracks B–E are done; Track A (SOC & SIEM, projects 02–10) is planned next.
 
 ---
 

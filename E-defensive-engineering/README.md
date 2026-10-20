@@ -10,4 +10,4 @@
 | 36 | [Splunk SOC](./project-36-splunk-soc/) | Build detections and dashboards in Splunk, the SIEM most job descriptions ask for. |
 | 37 | [Deception & Honeypots](./project-37-deception-honeypots/) | Catch attackers early with decoys that legitimate users never touch. |
 | 38 | [Web Application Firewall](./project-38-waf-modsecurity/) | Protect a vulnerable web app with a WAF and investigate blocked attacks. |
-| 39 | [SOC Metrics & Reporting](./project-39-soc-metrics-reporting/) | Measure SOC performance and report it to management. |
+| 39 | SOC Metrics & Reporting | Measure SOC performance and report it to management. |

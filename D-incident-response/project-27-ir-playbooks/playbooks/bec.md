@@ -15,4 +15,4 @@
 7. **Act on the fraud** — notify finance + the real vendor **out-of-band**; contact the bank fraud desk to **freeze/recall** — speed matters most here.
 
 ## Runs for real in
-[Project 20 — Business Email Compromise](../../project-20-business-email-compromise/)
+[Project 20 — Business Email Compromise](../../../C-cybercrime/project-20-business-email-compromise/)

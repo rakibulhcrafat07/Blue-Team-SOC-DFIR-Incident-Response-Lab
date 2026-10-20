@@ -53,10 +53,10 @@ Tier-1 triage ──declare?──► Tier-2 investigate ──confirmed + SEV-1
 ```
 
 ## 1.6 Evidence & chain of custody
-Every incident preserves evidence **before** remediation where time allows: images/triage packs hashed on collection, actions logged with operator + UTC time, originals untouched (work on copies). See [Project 01 — Evidence Acquisition](../project-01-evidence-acquisition-integrity/).
+Every incident preserves evidence **before** remediation where time allows: images/triage packs hashed on collection, actions logged with operator + UTC time, originals untouched (work on copies). See [Project 01 — Evidence Acquisition](../../00-lab-foundation/project-01-evidence-acquisition-integrity/).
 
 ## 1.7 Tooling (preparation)
-SIEM + detections (Wazuh/Splunk/Sentinel), EDR/live-response (Velociraptor — [P17](../project-17-velociraptor-live-response/)), case management (TheHive), threat intel (MISP), forensic toolkit (Autopsy, EZ Tools, Volatility). Detections are written and tuned **before** the incident, not during.
+SIEM + detections (Wazuh/Splunk/Sentinel), EDR/live-response (Velociraptor — [P17](../../B-dfir/project-17-velociraptor-live-response/)), case management (TheHive), threat intel (MISP), forensic toolkit (Autopsy, EZ Tools, Volatility). Detections are written and tuned **before** the incident, not during.
 
 ---
 
@@ -66,11 +66,11 @@ Each playbook is one page: **trigger → steps → decision points → done**, w
 
 | # | Playbook | Flowchart | Runs for real in |
 |---|---|---|---|
-| 1 | [Phishing](playbooks/phishing.md) | ![](images/02-pb-phishing.png) | [P19 Email Phishing](../project-19-email-phishing-forensics/) |
+| 1 | [Phishing](playbooks/phishing.md) | ![](images/02-pb-phishing.png) | [P19 Email Phishing](../../C-cybercrime/project-19-email-phishing-forensics/) |
 | 2 | [Ransomware](playbooks/ransomware.md) | ![](images/03-pb-ransomware.png) | [P28 Ransomware IR](../project-28-ransomware-ir/) |
-| 3 | [Business Email Compromise](playbooks/bec.md) | ![](images/04-pb-bec.png) | [P20 BEC](../project-20-business-email-compromise/) |
-| 4 | [Insider Data Theft](playbooks/insider.md) | ![](images/05-pb-insider.png) | [P26 USB/Insider](../project-26-insider-data-theft/) |
-| 5 | [Compromised Account](playbooks/compromised-account.md) | ![](images/06-pb-compromised-account.png) | [P13 Event Logs](../project-13-event-log-investigation/) / [P17](../project-17-velociraptor-live-response/) |
+| 3 | [Business Email Compromise](playbooks/bec.md) | ![](images/04-pb-bec.png) | [P20 BEC](../../C-cybercrime/project-20-business-email-compromise/) |
+| 4 | [Insider Data Theft](playbooks/insider.md) | ![](images/05-pb-insider.png) | [P26 USB/Insider](../../C-cybercrime/project-26-insider-data-theft/) |
+| 5 | [Compromised Account](playbooks/compromised-account.md) | ![](images/06-pb-compromised-account.png) | [P13 Event Logs](../../B-dfir/project-13-event-log-investigation/) / [P17](../../B-dfir/project-17-velociraptor-live-response/) |
 
 The five flowcharts are previewed above; full step-by-step content is in [`playbooks/`](playbooks/).
 
