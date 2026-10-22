@@ -1,6 +1,6 @@
 # Project 02 — Wazuh SIEM Deployment
 
-**Status:** ⚪ Planned  
+**Status:** ⚪ Planned
 **Track:** SOC & SIEM
 
 ## Objective
@@ -12,16 +12,20 @@ The company has no central logging. Stand up Wazuh and get Windows and Linux tel
 ## Environment
 | Item | Value |
 |---|---|
-| Case ID | `CB-02-____` |
-| Host OS | |
-| VMs used | |
-| Tool versions | |
-| Evidence source | |
+| Case ID | CB-02-001 |
+| Host OS | Ubuntu Server 24.04 (manager); Windows 10/11 eval (endpoint); Ubuntu Server 22.04 (endpoint) |
+| VMs used | soc-wazuh-mgr (192.168.60.10), soc-win-endpoint (192.168.60.20), soc-linux-endpoint (192.168.60.21) |
+| Tool versions | Wazuh 4.9.x (confirm exact version at install time) |
+| Evidence source | Wazuh dashboard, agent enrollment log, ossec.conf diffs |
 | Time zone used | UTC |
 
 ## Tools
 - Wazuh manager / indexer / dashboard
 - Wazuh agents
+
+## Reference
+- Lab design (network, VM specs, power-on groups): see ../LAB-ARCHITECTURE.md
+- Step-by-step deployment runbook (commands for each build step below): see ./runbook.md
 
 ## Evidence Inventory
 | Item | Size | MD5 | SHA-256 | Source | Acquired (UTC) |
@@ -69,13 +73,13 @@ _Commands, screenshots and observations._
 
 ## Deliverables
 - [ ] Investigation notes
-- [ ] Screenshots in `images/`
+- [ ] Screenshots in images/
 - [ ] Agent inventory
 - [ ] Tuning log (rule, change, reason)
 - [ ] Dashboard screenshots
-- [ ] Final report in `report/`
+- [ ] Final report in report/
 
 ## Key Learnings
 1. 
 2. 
-3. 
+3.
