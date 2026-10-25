@@ -1,7 +1,7 @@
 <h1 align="center">Project 02 — Wazuh SIEM Deployment</h1>
 
 <p align="center">
-  <img alt="Status" src="https://img.shields.io/badge/status-in%20progress-yellow">
+  <img alt="Status" src="https://img.shields.io/badge/status-done-brightgreen">
   <img alt="Wazuh" src="https://img.shields.io/badge/Wazuh-4.14.9-blue">
   <img alt="Track" src="https://img.shields.io/badge/track-A%20SOC%20%26%20SIEM-informational">
   <img alt="ATT&CK" src="https://img.shields.io/badge/ATT%26CK-T1110%20%7C%20T1136-red">
