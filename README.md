@@ -5,7 +5,7 @@ A project-based blue team portfolio covering the full defender lifecycle: **buil
 
 Every project is a self-contained investigation or build with its own scenario, evidence, findings, troubleshooting log and report. No copied commands, no empty templates: a project is marked complete only when it contains real screenshots, hashes, queries and findings produced in this lab.
 
-**Progress:** 29 of 38 projects complete. Track 0 and Tracks B–E are done; Track A (SOC & SIEM, projects 02–10) is planned next.
+**Progress:** 30 of 38 projects complete. Track 0 and Tracks B–E are done; Track A (SOC & SIEM) has started with project 02, and projects 03–10 are planned next.
 
 ---
 
@@ -44,7 +44,7 @@ Minimum host: 16 GB RAM (run tracks one at a time). Recommended: 32 GB+.
 
 | # | Project | Scenario / Goal | Key Tools | Status |
 |---|---|---|---|---|
-| 02 | [Wazuh SIEM Deployment](./A-soc-siem/project-02-wazuh-deployment/) | Deploy Wazuh, onboard Windows & Linux agents, tune default rules | Wazuh | ⚪ |
+| 02 | [Wazuh SIEM Deployment](./A-soc-siem/project-02-wazuh-deployment/) | Deploy Wazuh 4.14.9, enroll a Linux agent, test FIM, SCA and vulnerability detection, simulate T1110 and T1136, tune with a custom rule | Wazuh | ✅ |
 | 03 | [Telemetry Engineering](./A-soc-siem/project-03-telemetry-engineering/) | Sysmon, Windows advanced audit policy, PowerShell logging, auditd; measure coverage gaps | Sysmon, auditd, GPO | ⚪ |
 | 04 | [Elastic Stack SOC](./A-soc-siem/project-04-elastic-soc/) | Build a second SIEM, compare detections and query languages | Elasticsearch, Kibana, Fleet | ⚪ |
 | 05 | [Detection Engineering with Sigma](./A-soc-siem/project-05-detection-engineering-sigma/) | Write, test and convert Sigma rules for 15+ ATT&CK techniques; detection-as-code in Git | Sigma, pySigma, Atomic Red Team | ⚪ |
