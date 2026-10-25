@@ -8,7 +8,7 @@
   <img alt="Endpoint" src="https://img.shields.io/badge/endpoint-Linux%20only-lightgrey">
 </p>
 
-<p align="center"><b>Case ID:</b> CB-02-001 · <b>Date:</b> 2026-10-25 · <b>Analyst:</b> Rafat</p>
+<p align="center"><b>Case ID:</b> CB-02-001 · <b>Date:</b> 2026-10-25 · <b>Analyst:</b> Rakibul Hoque Chowdhury</p>
 
 > **Scope note.** The plan also had a Windows endpoint (`soc-win-endpoint`). I dropped it in this run to save time and RAM, so this project has **one Linux endpoint only** and there is no Windows evidence. All attacks are simulated, run only between my own lab VMs.
 
