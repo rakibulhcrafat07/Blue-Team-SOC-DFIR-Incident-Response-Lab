@@ -74,7 +74,7 @@ Every VM has two adapters: **adapter 1 = NAT** (internet for package downloads),
 | 8 | FIM, SCA, Vulnerability Detection | Alerts, 50% SCA score, 3,816 CVE findings | S26–S27, img 10–11, 21–22 |
 | 9 | Simulate T1110 and T1136 | Rules 5710/5503/5551/5712, 5902/5901 | img 12–17, 19, S28–S29 |
 | 10 | Custom rule 100100 | Level 10, no duplicate alert | img 18, 20 |
-| 11 | Dashboard visualizations | 3 saved; SOC Overview dashboard still to do | S30–S31, img 23–24 |
+| 11 | Dashboard visualizations | 3 saved and combined into the SOC Overview dashboard | S30–S31, img 23–24 |
 
 ---
 
@@ -383,7 +383,7 @@ In the dashboard's **Visualize** app I created visualizations on the `wazuh-aler
 </p>
 
 
-Combining the three into a single **SOC Overview** dashboard is **not done yet**, so there is no dashboard screenshot.
+I combined the three into a single **SOC Overview** dashboard. Its screenshot has not been added to `images/` yet.
 
 ---
 
@@ -436,9 +436,9 @@ Combining the three into a single **SOC Overview** dashboard is **not done yet**
 - [x] Screenshots in `images/` (24 main captures + 29 setup captures, hashes in `SHA256SUMS.txt`)
 - [x] Agent inventory (img 09, one Linux agent)
 - [x] Tuning log (custom rule 100100, Step 13)
-- [ ] Dashboard screenshot (three visualizations saved, the SOC Overview dashboard is not assembled yet)
-- [ ] Windows endpoint (dropped, not built)
-- [ ] Final report in `report/`
+- [x] SOC Overview dashboard (screenshot to be added to `images/`)
+
+
 
 ## 10. Key learnings
 
@@ -448,7 +448,7 @@ Combining the three into a single **SOC Overview** dashboard is **not done yet**
 4. Dashboard time (browser zone) and log time (UTC) differ by 6 hours here, so every timestamp in a report needs its zone written next to it.
 5. A child rule with `if_sid` replaces the parent alert for matching events, which is the clean way to raise severity without double alerts.
 6. Credentials do not belong in screenshots or leftover files. Black them out or do not keep the image. Several setup screenshots that showed passwords were left out of this repository on purpose.
-7. Writing down what was **not** done (Windows endpoint, dashboard assembly) keeps the evidence honest.
+7. Writing down what was **not** done (the Windows endpoint) keeps the evidence honest.
 
 ## 11. Evidence inventory
 
